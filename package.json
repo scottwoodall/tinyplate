@@ -12,6 +12,6 @@
   },
   "scripts": {
     "dev-server": "webpack-dev-server --config webpack-dev.config.js --content-base build/ --port 2922 --watch --progress --colors",
-    "build": "webpack --config webpack-build.config.js --optimize-minimize --output-file /dev/null"
+    "build": "webpack --config webpack-build.config.js --output-file /dev/null"
   }
 }
