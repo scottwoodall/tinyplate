@@ -2,11 +2,11 @@
 
 A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork of the [Responsive-Dashboard](https://github.com/Ehesp/Responsive-Dashboard) project but includes the following changes:
 
-[Demo](http://scottwoodall.com/tinyplate/)
-
 * The Angular dependency was removed.
 * You can choose between a fixed or fluid width.
 * When viewed on a mobile device, the sidebar has been replaced with an off canvas solution that is toggled with a button.
+
+[demo](http://scottwoodall.com/tinyplate/)
 
 ### installation
 * todo
