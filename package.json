@@ -15,5 +15,15 @@
   "scripts": {
     "dev-server": "webpack-dev-server --config webpack-dev.config.js --content-base build/ --port 2922 --watch --progress --colors",
     "build": "webpack --config webpack-build.config.js --output-file /dev/null"
-  }
+  },
+  "keywords": [
+    "responsive",
+    "dashboard",
+    "bootstrap"
+  ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/scottwoodall/tinyplate"
+  },
+  "license": "MIT"
 }
