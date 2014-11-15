@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tinyplate</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="tinyplate.css" type="text/css">
+    </head>
+    <body>
+        <div class="row-offcanvas full-height">
+            <div class="container full-height">
+                <div class="row full-height">
+                    <div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 full-height">
+                        <ul class="sidebar">
+                            <li class="sidebar-header">
+                                <a href="#">Tinyplate</a>
+                            </li>
+                            <li class="sidebar-title">NAVIGATION</li>
+                            <li class="sidebar-list">
+                                <a href="#">Dashboard <i class="menu-icon fa fa-tachometer"></i></a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-footer">
+                            <div class="col-xs-4">
+                                <a href="https://github.com/scottwoodall/plater" target="_blank">Github</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="#" target="_blank">About</a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="#">Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 full-height">
+                        <div id="topnavbar" class="navbar navbar-default">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <a class="btn btn-default sidebar-toggle navbar-toggle">
+                                        <i class="fa fa-exchange"></i>
+                                    </a>
+                                    <a class="btn btn-default navbar-toggle"
+                                            data-toggle="collapse"
+                                            data-target="#content-navbar-collapse">
+                                        <i class="fa fa-bars"></i>
+                                    </a>
+                                </div>
+                                <a class="navbar-brand">Demo</a>
+                                <div id="content-navbar-collapse" class="collapse navbar-collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                                <i class="fa fa-2x fa-user"></i>
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu" role="menu">
+                                                <li><a href="#">John Doe</a></li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Logout</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script>
+            $(".sidebar-toggle").on("click", function () {
+                $(".row-offcanvas").toggleClass("active");
+            });
+        </script>
+    </body>
+</html>
