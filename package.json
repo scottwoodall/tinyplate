@@ -1,7 +1,9 @@
 {
   "name": "tinyplate",
-  "description": "intentionally blank",
-  "dependencies": {
+  "version": "0.0.1",
+  "author": "Scott Woodall @scott_woodall",
+  "description": "A lightweight, responsive dashboard powered by Twitter Bootstrap",
+  "devDependencies": {
     "webpack": "~1.4.13",
     "less": "~1.7.5",
     "less-loader": "~0.7.7",
