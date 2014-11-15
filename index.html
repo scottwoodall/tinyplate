@@ -7,12 +7,13 @@
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="tinyplate.css" type="text/css">
+        <style>body {font-family: 'Segoe UI', 'Lucida Grande', 'Ubuntu', 'sans-serif';}</style>
     </head>
     <body>
         <div class="row-offcanvas full-height">
-            <div class="container full-height">
+            <div id="fixedOrFluid" class="container full-height">
                 <div class="row full-height">
-                    <div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-3 full-height">
+                    <div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-2 full-height">
                         <ul class="sidebar">
                             <li class="sidebar-header">
                                 <a href="#">Tinyplate</a>
@@ -24,17 +25,17 @@
                         </ul>
                         <div class="sidebar-footer">
                             <div class="col-xs-4">
-                                <a href="https://github.com/scottwoodall/plater" target="_blank">Github</a>
+                                <a href="https://github.com/scottwoodall/tinyplate" target="_blank">Github</a>
                             </div>
                             <div class="col-xs-4">
-                                <a href="#" target="_blank">About</a>
+                                <a href="#">About</a>
                             </div>
                             <div class="col-xs-4">
                                 <a href="#">Support</a>
                             </div>
                         </div>
                     </div>
-                    <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-9 full-height">
+                    <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-10 full-height">
                         <div id="topnavbar" class="navbar navbar-default">
                             <div class="container-fluid">
                                 <div class="navbar-header">
@@ -67,22 +68,27 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="alert alert-success">Thanks for visiting!</div>
-                                <div class="alert alert-danger">Found a
-                                    bug? Create an issue with as many details as
-                                    you can.
-                                </div>
-                                <h3 class="page-header">Features</h3>
-                                <p>Switch between fixed width or fluid.</p>
+                                <div class="alert alert-success">Welcome to tinyplate!</div>
+                                <h3 class="page-header">Fixed or fluid width</h3>
                                 <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn btn-primary active">
-                                        <input type="radio" name="options"
-                                            autocomplete="off" checked>Fixed
+                                    <label class="btn btn-default btn-lg active">
+                                        <input type="radio" name="fixedOrFluid"
+                                            autocomplete="off" checked>container
                                     </label>
-                                    <label class="btn btn-primary">
-                                        <input type="radio" name="options">
-                                            Fluid
+                                    <label class="btn btn-default btn-lg">
+                                        <input type="radio"
+                                        name="fixedOrFluid">container-fluid
                                     </label>
+                                </div>
+                                <h3 class="page-header">Adjust column widths</h3>
+                                <div class="row">
+                                      <div class="col-xs-4">
+                                            <select id="changeColumnWidths" class="form-control">
+                                                <option value="2">2 x 10</option>
+                                                <option value="3">3 x 9</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,6 +101,31 @@
         <script>
             $(".sidebar-toggle").on("click", function () {
                 $(".row-offcanvas").toggleClass("active");
+            });
+
+            $("input[name='fixedOrFluid']").on("change", function () {
+                $("#fixedOrFluid").toggleClass("container").toggleClass("container-fluid");
+            });
+
+            $("#changeColumnWidths").on("change", function (e) {
+                switch(e.target.value) {
+                case "2":
+                    $("#content, #sidebar").removeClass(function (index, css) {
+                        return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
+                    });
+
+                    $("#sidebar").addClass("col-sm-2 col-md-2 col-lg-2");
+                    $("#content").addClass("col-sm-10 col-md-10 col-lg-10");
+                    break;
+                case "3":
+                    $("#content, #sidebar").removeClass(function (index, css) {
+                        return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
+                    });
+
+                    $("#content").addClass("col-sm-9 col-md-9 col-lg-9");
+                    $("#sidebar").addClass("col-sm-3 col-md-3 col-lg-3");
+                    break;
+                }
             });
         </script>
     </body>
