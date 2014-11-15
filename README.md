@@ -13,7 +13,7 @@ A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork
 
 ### development
 1. `git clone https://github.com/scottwoodall/tinyplate.git`
-1. `npm install`
+1. `cd tinyplate; npm install`
 1. `npm run dev-server`
 1. `npm run build` creates `dist/tinyplate.css` for when you're ready to commit.
 
