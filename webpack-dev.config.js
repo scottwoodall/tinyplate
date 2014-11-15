@@ -11,6 +11,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("dist/tinyplate.css")
+        new ExtractTextPlugin("tinyplate.css")
     ]
 };
