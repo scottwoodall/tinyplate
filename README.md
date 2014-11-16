@@ -2,7 +2,7 @@
 A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork of the [Responsive-Dashboard](https://github.com/Ehesp/Responsive-Dashboard) project but includes the following changes:
 
 * The Angular dependency was removed.
-* Choose between a fixed or fluid width.
+* Choose between a fixed or fluid layout.
 * Change the width of your sidebar/content.
 * When viewed on a mobile device, the sidebar has been replaced with an off canvas solution that is toggled with a button.
 
