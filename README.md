@@ -15,10 +15,10 @@ A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork
 #### usage
 Use `index.html` as the starting point for your project. 
 
-##### changing layout from fixed to fluid
-The template defaults to a fixed layout. If you want a fluid layout change the CSS class on the `#wrapper` div to `container-fluid`:
+#### changing layout from fixed to fluid
+The template defaults to a fixed layout. If you want a fluid layout change the CSS class on the `#wrapper` div to `container-fluid`.
 
-##### changing colors
+#### changing colors
 Make your changes in `less/variables.less` and re-compile.
 
 #### development
