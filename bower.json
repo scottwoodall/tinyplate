@@ -1,0 +1,23 @@
+{
+  "name": "tinyplate",
+  "version": "0.0.2",
+  "homepage": "https://github.com/scottwoodall/tinyplate",
+  "authors": [
+    "Scott Woodall @scott_woodall"
+  ],
+  "description": "A lightweight, responsive dashboard powered by Twitter Bootstrap",
+  "main": "dist/tinyplate.css",
+  "keywords": [
+    "dashboard",
+    "responsive",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
