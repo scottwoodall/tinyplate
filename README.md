@@ -8,9 +8,9 @@ A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork
 [demo](http://scottwoodall.com/tinyplate/)
 
 #### installation (choose one)
-1. Grab the [HTML template](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/index.html) and [stylesheet](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/tinyplate.css) from Github.
-1. `npm install tinyplate`
-1. `git clone https://github.com/scottwoodall/tinyplate.git`
+* Grab [index.html](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/index.html) and [tinyplate.css](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/tinyplate.css) directly from Github.
+* `npm install tinyplate`
+*  `git clone https://github.com/scottwoodall/tinyplate.git`
 
 #### usage
 Use `index.html` as the starting point for your project. 
@@ -19,7 +19,7 @@ Use `index.html` as the starting point for your project.
 The template defaults to a fixed layout. If you want a fluid layout change the CSS class on the `#wrapper` div to `container-fluid`.
 
 #### changing colors
-Make changes to `less/variables.less` and re-compile.
+Follow the development instructions and then make changes to `less/variables.less` and re-compile.
 
 #### development
 1. `git clone https://github.com/scottwoodall/tinyplate.git`
@@ -27,7 +27,7 @@ Make changes to `less/variables.less` and re-compile.
 1. `npm run dev-server`
 1. `npm run build` creates `dist/tinyplate.css` for when you're ready to commit.
 
-Edit the source files under `./less` and webpack will automatically re-compile to `build/tinyplate.css`. Point your browser at [http://localhost:2922/webpack-dev-server/](http://localhost:2922/webpack-dev-server/) to see the changes.
+Edit the source files under `./less` and webpack will automatically re-compile. Point your browser at [http://localhost:2922/webpack-dev-server/](http://localhost:2922/webpack-dev-server/) to view your changes.
 
 #### credits
 * Burke Holland for his [blog post](http://blogs.telerik.com/kendoui/posts/13-11-05/creating-a-rwd-off-canvas-layout-with-bootstrap-3) on creating an off-canvas sidebar.
