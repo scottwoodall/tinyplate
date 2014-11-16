@@ -11,6 +11,7 @@ A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork
 #### installation (choose one)
 * Grab [index.html](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/index.html) and [tinyplate.css](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/tinyplate.css) directly from Github.
 * `npm install tinyplate`
+* `bower install tinyplayte`
 *  `git clone https://github.com/scottwoodall/tinyplate.git`
 
 #### usage
