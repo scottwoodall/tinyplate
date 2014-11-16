@@ -27,9 +27,10 @@ Follow the development instructions and then make changes to `less/variables.les
 1. `git clone https://github.com/scottwoodall/tinyplate.git`
 1. `cd tinyplate; npm install`
 1. `npm run dev-server`
-1. `npm run build` creates `dist/tinyplate.css` for when you're ready to commit.
 
 Edit the source files under `./less` and webpack will automatically re-compile. Point your browser at [http://localhost:2922/webpack-dev-server/](http://localhost:2922/webpack-dev-server/) to view your changes.
+
+`npm run build` creates `dist/tinyplate.css` for when you're ready to commit.
 
 #### credits
 * Burke Holland for his [blog post](http://blogs.telerik.com/kendoui/posts/13-11-05/creating-a-rwd-off-canvas-layout-with-bootstrap-3) on creating an off-canvas sidebar.
