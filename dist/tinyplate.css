@@ -1,31 +1,3 @@
-html {
-  overflow-x: hidden;
-}
-html,
-body,
-.full-height {
-  height: 100%;
-}
-body {
-  background: #939598;
-}
-#content {
-  overflow-y: scroll;
-  background: #ffffff;
-}
-@media screen and (max-width: 767px) {
-  .row-offcanvas {
-    position: relative;
-    left: 0;
-    -webkit-transition: left 0.25s ease-in-out;
-    -moz-transition: left 0.25s ease-in-out;
-    -o-transition: left 0.25s ease-in-out;
-    transition: left 0.25s ease-in-out;
-  }
-  .row-offcanvas.active {
-    left: 80%;
-  }
-}
 #sidebar {
   height: 100%;
   padding-left: 0px;
@@ -165,5 +137,33 @@ ul.sidebar .sidebar-list a:hover .menu-icon {
 @media screen and (min-width: 768px) {
   .navbar-right {
     margin-right: -30px;
+  }
+}
+html {
+  overflow-x: hidden;
+}
+html,
+body,
+.full-height {
+  height: 100%;
+}
+body {
+  background: #939598;
+}
+#content {
+  overflow-y: scroll;
+  background: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    left: 0;
+    -webkit-transition: left 0.25s ease-in-out;
+    -moz-transition: left 0.25s ease-in-out;
+    -o-transition: left 0.25s ease-in-out;
+    transition: left 0.25s ease-in-out;
+  }
+  .row-offcanvas.active {
+    left: 80%;
   }
 }
