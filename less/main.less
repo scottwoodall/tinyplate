@@ -15,6 +15,23 @@ body {
     background: @tinyplate-content-background;
 }
 
+#content .row > div {
+    margin-bottom: 15px;
+}
+
+.green {
+    background: #23ae89 !important;
+}
+.blue {
+    background: #2361ae !important;
+}
+.orange {
+    background: #d3a938 !important;
+}
+.red {
+    background: #ae2323 !important;
+}
+
 @media screen and (max-width: 767px) {
     .row-offcanvas {
         position: relative;
@@ -33,3 +50,5 @@ body {
 @import "variables.less";
 @import "sidebar.less";
 @import "topnavbar.less";
+@import "mixins.less";
+@import "widgets.less";

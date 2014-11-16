@@ -19,7 +19,7 @@ Use `index.html` as the starting point for your project.
 The template defaults to a fixed layout. If you want a fluid layout change the CSS class on the `#wrapper` div to `container-fluid`.
 
 #### changing colors
-Make your changes in `less/variables.less` and re-compile.
+Make changes to `less/variables.less` and re-compile.
 
 #### development
 1. `git clone https://github.com/scottwoodall/tinyplate.git`
