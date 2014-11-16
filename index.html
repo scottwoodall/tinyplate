@@ -1,132 +1,248 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tinyplate</title>
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.css">
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="tinyplate.css" type="text/css">
-        <style>body {font-family: 'Segoe UI', 'Lucida Grande', 'Ubuntu', 'sans-serif';}</style>
-    </head>
-    <body>
-        <div class="row-offcanvas full-height">
-            <div id="fixedOrFluid" class="container full-height">
-                <div class="row full-height">
-                    <div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-2 full-height">
-                        <ul class="sidebar">
-                            <li class="sidebar-header">
-                                <a href="#">Tinyplate</a>
-                            </li>
-                            <li class="sidebar-title">NAVIGATION</li>
-                            <li class="sidebar-list">
-                                <a href="#">Dashboard <i class="menu-icon fa fa-tachometer"></i></a>
-                            </li>
-                            <li class="sidebar-list">
-                                <a href="#">Settings <i class="menu-icon fa fa-cogs"></i></a>
-                            </li>
-                        </ul>
-                        <div class="sidebar-footer">
-                            <div class="col-xs-6">
-                                <a href="https://github.com/scottwoodall/tinyplate" target="_blank">Github</a>
-                            </div>
-                            <div class="col-xs-6">
-                                <a href="#">Support</a>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tinyplate</title>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="tinyplate.css" type="text/css">
+<style>body {font-family: 'Segoe UI', 'Lucida Grande', 'Ubuntu', 'sans-serif';}</style>
+</head>
+<body>
+<div class="row-offcanvas full-height">
+    <div id="fixedOrFluid" class="container full-height">
+        <div class="row full-height">
+            <div id="sidebar" class="col-xs-12 col-sm-3 col-md-3 col-lg-2 full-height">
+                <ul class="sidebar">
+                    <li class="sidebar-header">
+                    <a href="#">Tinyplate</a>
+                    </li>
+                    <li class="sidebar-title">NAVIGATION</li>
+                    <li class="sidebar-list">
+                    <a href="#">Dashboard <i class="menu-icon fa fa-tachometer"></i></a>
+                    </li>
+                    <li class="sidebar-list">
+                    <a href="#">Settings <i class="menu-icon fa fa-cogs"></i></a>
+                    </li>
+                </ul>
+                <div class="sidebar-footer">
+                    <div class="col-xs-6">
+                        <a href="https://github.com/scottwoodall/tinyplate" target="_blank">Github</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-10 full-height">
+                <div id="topnavbar" class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="btn btn-default sidebar-toggle navbar-toggle">
+                                <i class="fa fa-exchange"></i>
+                            </a>
+                            <a class="btn btn-default navbar-toggle"
+                                data-toggle="collapse"
+                                data-target="#content-navbar-collapse">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                        <a class="navbar-brand">Demo</a>
+                        <div id="content-navbar-collapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-2x fa-user"></i>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">John Doe</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">Logout</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="alert alert-success">Welcome to tinyplate!</div>
+                        <div class="alert alert-info">Found a bug? <a
+                                href="https://github.com/scottwoodall/tinyplate/issues/new">Create an
+                                issue</a> with as many details as you can.</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="widget-icon green pull-left">
+                                    <i class="fa fa-users"></i>
+                                </div>
+                                <div class="widget-content pull-left">
+                                    <div class="title">80</div>
+                                    <div class="comment">Users</div>
+                                </div>
+                                <div class="clearfix"></div>
                             </div>
                         </div>
                     </div>
-                    <div id="content" class="col-xs-12 col-sm-9 col-md-9 col-lg-10 full-height">
-                        <div id="topnavbar" class="navbar navbar-default">
-                            <div class="container-fluid">
-                                <div class="navbar-header">
-                                    <a class="btn btn-default sidebar-toggle navbar-toggle">
-                                        <i class="fa fa-exchange"></i>
-                                    </a>
-                                    <a class="btn btn-default navbar-toggle"
-                                            data-toggle="collapse"
-                                            data-target="#content-navbar-collapse">
-                                        <i class="fa fa-bars"></i>
-                                    </a>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="widget-icon red pull-left">
+                                    <i class="fa fa-tasks"></i>
                                 </div>
-                                <a class="navbar-brand">Demo</a>
-                                <div id="content-navbar-collapse" class="collapse navbar-collapse">
-                                    <ul class="nav navbar-nav navbar-right">
-                                        <li class="dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                                <i class="fa fa-2x fa-user"></i>
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu" role="menu">
-                                                <li><a href="#">John Doe</a></li>
-                                                <li class="divider"></li>
-                                                <li><a href="#">Logout</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <div class="widget-content pull-left">
+                                    <div class="title">16</div>
+                                    <div class="comment">Servers</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="widget-icon orange pull-left">
+                                    <i class="fa fa-sitemap"></i>
+                                </div>
+                                <div class="widget-content pull-left">
+                                    <div class="title">225</div>
+                                    <div class="comment">Docs</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="widget-icon blue pull-left">
+                                    <i class="fa fa-support"></i>
+                                </div>
+                                <div class="widget-content pull-left">
+                                    <div class="title">62</div>
+                                    <div class="comment">Tickets</div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="widget">
+                            <div class="widget-title">
+                                <i class="fa fa-tasks"></i> Servers
+                                <a href="#" class="pull-right">Manage</a>
+                            </div>
+                            <div class="widget-body medium no-padding">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <tbody>
+                                        <tr><td>RDVMPC001</td><td>238.103.133.37</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDVMPC002</td><td>68.66.63.170</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDVMPC003</td><td>76.117.212.33</td><td><span tooltip="Server Down!" class="text-danger"><i class="fa fa-warning"></i></span></td></tr>
+                                        <tr><td>RDPHPC001</td><td>91.88.224.5</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDESX001</td><td>197.188.15.93</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDESX002</td><td>168.85.154.251</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDESX003</td><td>209.25.191.61</td><td><span tooltip="Server Down!" class="text-danger"><i class="fa fa-warning"></i></span></td></tr>
+                                        <tr><td>RDESX004</td><td>252.37.192.235</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDTerminal01</td><td>139.71.18.207</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        <tr><td>RDTerminal02</td><td>136.80.122.212</td><td><span tooltip="Could not connect!" class="text-warning"><i class="fa fa-flash"></i></span></td></tr>
+                                        <tr><td>RDDomainCont01</td><td>196.80.245.33</td><td><span class="text-success"><i class="fa fa-check"></i></span></td></tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="widget">
+                            <div class="widget-title">
+                                <i class="fa fa-users"></i> Users
+                                <input type="text" placeholder="Search" class="form-control input-sm pull-right" />
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="widget-body medium no-padding">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr><th class="text-center">ID</th><th>Username</th><th>Role</th><th>Account</th></tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr><td class="text-center">1</td><td>Joe Bloggs</td><td>Super Admin</td><td>AZ23045</td></tr>
+                                        <tr><td class="text-center">2</td><td>Timothy Hernandez</td><td>Admin</td><td>AU24783</td></tr>
+                                        <tr><td class="text-center">3</td><td>Joe Bickham</td><td>User</td><td>AM23781</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3 class="page-header">Fixed or fluid width</h3>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-default btn-lg active">
+                                <input type="radio" name="fixedOrFluid"
+                                autocomplete="off" checked>container
+                            </label>
+                            <label class="btn btn-default btn-lg">
+                                <input type="radio"
+                                name="fixedOrFluid">container-fluid
+                            </label>
+                        </div>
+                        <h3 class="page-header">Adjust column widths</h3>
                         <div class="row">
-                            <div class="col-xs-12">
-                                <div class="alert alert-success">Welcome to tinyplate!</div>
-                                <h3 class="page-header">Fixed or fluid width</h3>
-                                <div class="btn-group" data-toggle="buttons">
-                                    <label class="btn btn-default btn-lg active">
-                                        <input type="radio" name="fixedOrFluid"
-                                            autocomplete="off" checked>container
-                                    </label>
-                                    <label class="btn btn-default btn-lg">
-                                        <input type="radio"
-                                        name="fixedOrFluid">container-fluid
-                                    </label>
-                                </div>
-                                <h3 class="page-header">Adjust column widths</h3>
-                                <div class="row">
-                                      <div class="col-xs-4">
-                                            <select id="changeColumnWidths" class="form-control">
-                                                <option value="2">2 x 10</option>
-                                                <option value="3">3 x 9</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-xs-4">
+                                <select id="changeColumnWidths" class="form-control">
+                                    <option value="2">2 x 10</option>
+                                    <option value="3">3 x 9</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
-        <script>
-            $(".sidebar-toggle").on("click", function () {
-                $(".row-offcanvas").toggleClass("active");
+    </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+$(".sidebar-toggle").on("click", function () {
+        $(".row-offcanvas").toggleClass("active");
+        });
+
+$("input[name='fixedOrFluid']").on("change", function () {
+        $("#fixedOrFluid").toggleClass("container").toggleClass("container-fluid");
+        });
+
+$("#changeColumnWidths").on("change", function (e) {
+        switch(e.target.value) {
+        case "2":
+        $("#content, #sidebar").removeClass(function (index, css) {
+            return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
             });
 
-            $("input[name='fixedOrFluid']").on("change", function () {
-                $("#fixedOrFluid").toggleClass("container").toggleClass("container-fluid");
+        $("#sidebar").addClass("col-sm-2 col-md-2 col-lg-2");
+        $("#content").addClass("col-sm-10 col-md-10 col-lg-10");
+        break;
+        case "3":
+        $("#content, #sidebar").removeClass(function (index, css) {
+            return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
             });
 
-            $("#changeColumnWidths").on("change", function (e) {
-                switch(e.target.value) {
-                case "2":
-                    $("#content, #sidebar").removeClass(function (index, css) {
-                        return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
-                    });
-
-                    $("#sidebar").addClass("col-sm-2 col-md-2 col-lg-2");
-                    $("#content").addClass("col-sm-10 col-md-10 col-lg-10");
-                    break;
-                case "3":
-                    $("#content, #sidebar").removeClass(function (index, css) {
-                        return (css.match (/(^|\s)col-\S+/g) || []).join(' ');
-                    });
-
-                    $("#content").addClass("col-sm-9 col-md-9 col-lg-9");
-                    $("#sidebar").addClass("col-sm-3 col-md-3 col-lg-3");
-                    break;
-                }
-            });
-        </script>
-    </body>
+        $("#content").addClass("col-sm-9 col-md-9 col-lg-9");
+        $("#sidebar").addClass("col-sm-3 col-md-3 col-lg-3");
+        break;
+        }
+        });
+</script>
+</body>
 </html>
