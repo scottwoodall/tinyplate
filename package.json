@@ -1,6 +1,6 @@
 {
   "name": "tinyplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Scott Woodall @scott_woodall",
   "description": "A lightweight, responsive dashboard powered by Twitter Bootstrap",
   "devDependencies": {
