@@ -12,7 +12,7 @@ A lightweight, responsive dashboard powered by Twitter Bootstrap. This is a fork
 * Grab [index.html](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/index.html) and [tinyplate.css](https://raw.githubusercontent.com/scottwoodall/tinyplate/master/dist/tinyplate.css) directly from Github.
 * `npm install tinyplate`
 * `bower install tinyplate`
-*  `git clone https://github.com/scottwoodall/tinyplate.git`
+* `git clone https://github.com/scottwoodall/tinyplate.git`
 
 #### usage
 Use `index.html` as the starting point for your project. 
@@ -34,7 +34,7 @@ Edit the source files under `./less` and webpack will automatically re-compile. 
 
 #### credits
 * Burke Holland for his [blog post](http://blogs.telerik.com/kendoui/posts/13-11-05/creating-a-rwd-off-canvas-layout-with-bootstrap-3) on creating an off-canvas sidebar.
-* The original [Responsive-Dashboard](https://github.com/Ehesp/Responsive-Dashboard) for creating a great looking dasbhoard.
+* The original [Responsive-Dashboard](https://github.com/Ehesp/Responsive-Dashboard) for creating a great looking dashboard.
 
 #### license
 MIT
